@@ -1,0 +1,96 @@
+
+.fullbody{
+width: 100%;
+border:2px solid #81D4CB;
+/*padding:100px;*/
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content:space-around; 
+flex-wrap:wrap;
+margin-bottom:50px;
+}
+
+.image {
+  /*border:1px solid black;*/
+  position:relative;
+  align-content: center;
+  display: block;
+  width:200px;
+  height:200px;
+  margin:50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  transition: .6s ease;
+  background-color: #008CBA;
+}
+
+.image:hover .overlay {
+  opacity:0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.ques
+{
+  width: 100%; 
+  color:black; 
+  background: #81D4CB; 
+  /*border:1px solid grey;*/
+  /*padding:50px;*/
+  text-align:center;  
+  font-size: 20px;
+  /*visibility: hidden;*/
+  display:none;
+  position:relative;
+  /*z-index: 10;*/
+  /*  margin-bottom: 50px;*/
+}
+
+.ques p,h2
+{
+  text-align: justify;
+  margin:80px;
+}
+/*navbar*/
+ul.topnav {
+    list-style-type: none;
+    margin:-10px 0px 0px -10px;
+    background-color: #333;
+    max-width:100%;
+    min-width: 97.3%;
+    position:fixed;
+    z-index:10;
+    display: flex;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-end;
+}
+/* Float the list items side by side */
+/*ul.topnav li { float:left; }*/
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
